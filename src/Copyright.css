@@ -1,0 +1,29 @@
+.Copyright {
+    position: absolute;
+    left: 40%;
+    top: 95%;
+    width: 20%;
+    user-select:none;
+    z-index: 999;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.Copyright-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.Copyright:hover .Copyright-inner {
+    transform: rotateX(180deg);
+}
+
+.Copyright-front {
+    backface-visibility: hidden;
+}
+
+.Copyright-back {
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+}

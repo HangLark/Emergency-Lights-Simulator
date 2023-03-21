@@ -1,0 +1,80 @@
+.Button {
+    position: relative;
+    height: 8%;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 18px;
+    border-radius: 20px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    user-select: none;
+    background: transparent;
+    color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    transition: all 0.2s ease-in;
+}
+
+.Button:hover {
+    background: rgb(44, 74, 180);
+    box-shadow: 0 0 30px 5px rgba(0, 86, 141, 0.81);
+    transition: all 0.2s ease-out;
+}
+
+.Button:hover::before {
+    animation: flash 0.7s 0s linear;
+}
+
+.Button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #ffffff;
+    box-shadow: 0 0 50px 30px #ff0000;
+    transform: skewX(-20deg);
+}
+
+@keyframes flash {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+        left: 100%;
+    }
+    75% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 0%;
+    }
+}
+
+.Button:active {
+    box-shadow: 0 0 0 0 transparent;
+    scale: 0.95;
+    transition: box-shadow 0.05s ease-in;
+}
+
+.LED {
+    position: absolute;
+    right: 12%;
+    top: 48%;
+    height: 5px;
+    width: 5px;
+    background-color: #00c800;
+    box-shadow: 0 0 3px 3px #00c800;
+    border-radius: 50%;
+}
