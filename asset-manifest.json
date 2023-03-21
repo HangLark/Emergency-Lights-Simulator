@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Emergency-Lights-Simulator/static/css/main.e7b46a35.css",
+    "main.js": "/Emergency-Lights-Simulator/static/js/main.9e89906c.js",
+    "static/js/787.95f9d374.chunk.js": "/Emergency-Lights-Simulator/static/js/787.95f9d374.chunk.js",
+    "index.html": "/Emergency-Lights-Simulator/index.html",
+    "main.e7b46a35.css.map": "/Emergency-Lights-Simulator/static/css/main.e7b46a35.css.map",
+    "main.9e89906c.js.map": "/Emergency-Lights-Simulator/static/js/main.9e89906c.js.map",
+    "787.95f9d374.chunk.js.map": "/Emergency-Lights-Simulator/static/js/787.95f9d374.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7b46a35.css",
+    "static/js/main.9e89906c.js"
+  ]
+}
